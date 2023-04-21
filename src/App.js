@@ -1,23 +1,16 @@
 import React from 'react';
 import './App.css';
-import Technologies from './components/Technologies.js';
-import Heder from './components/Heder.js';
+import Header from './components/Header.jsx'
+import Navbar from './components/Navbar.jsx'
+import Profile from './components/Profile.jsx'
 
 const App = () => {
   return (
-    <div>
-      <div><Heder /></div>
-      <div><Footer /></div>
-      <div><Technologies /></div>
-    </div>
-  );
-}
-
-const Footer = () => {
-  return (
-    <div>    
-      <a href="#">add</a>
-    </div>
+      <div className = "app-wrapper">
+        <Header />
+        <Navbar />
+        <Profile />
+      </div>
   );
 }
 

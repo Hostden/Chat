@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 .Post p{
-  margin-left: 50px;
+  margin-left: 20px;
   font-size: 26px;
   font-weight: 500;
   color:whitesmoke;
@@ -11,6 +11,8 @@
 .item{
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .item img{
   width: 50px;
@@ -21,4 +23,15 @@
 .item p{
   font-size: 18px;
   color:aliceblue;
+}
+span{
+  font-weight: 400;
+  color:white;
+  margin: 0 0 20px 10px;
+}
+hr{
+  width: 95%;
+  height: 1px;
+  border: none;
+  background-color: #b0d430;
 }

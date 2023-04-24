@@ -8,7 +8,6 @@
     font-size: 18px;
     font-weight: 400;
 }
-
-.active a{
-  color: rgb(213, 222, 26);
+.activeLink{
+  color: rgb(213, 222, 26) !important;
 }

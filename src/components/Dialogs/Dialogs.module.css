@@ -1,0 +1,38 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.dialogsItems{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+.dialog{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dialog a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color:aliceblue;
+    padding: 10px 0;
+
+}
+.active{
+    color: rgb(213, 222, 26);
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.message{
+    font-size: 14px;
+    font-weight: 400;
+    color:aliceblue;
+    padding: 10px;
+}

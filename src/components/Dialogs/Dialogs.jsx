@@ -17,22 +17,38 @@ const Message = (props) =>{
     )
 }
 
+    let dialogsData = [
+        { id:1, name:"Dima"},
+        { id:2, name:"Sasha"},
+        { id:3, name:"Petya"},
+        { id:4, name:"Lena"},
+        { id:5, name:"Ivan"},
+        { id:6, name:"Tanya"}
+    ];
+
+    let messageData = [
+        {id:1, message:"Lorem ipsum dolor sit, amet consectetur adipisicing elit."},
+        {id:2, message:"Exercitationem esse voluptatibus, modi porro minima magni dignissimos facere quas aliquam obcaecati, debitis eius ipsam animi ipsum harum possimus."},
+        {id:3, message: "Pariatur, eligendi molestiae."},
+        {id:4, message:"Hellow World!!"}
+    ];
+
 const Dialogs = (props) => {
     return ( 
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <DialogItems name="Dima" id="1" />
-                <DialogItems name="Sasha" id="2" />
-                <DialogItems name="Petya" id="3" />
-                <DialogItems name="Ivan" id="4" />
-                <DialogItems name="Tanya" id="5" />
-                <DialogItems name="Lena" id="6" />
+                <DialogItems name={dialogsData[0].name} id={dialogsData[0].id}/>
+                <DialogItems name={dialogsData[1].name} id={dialogsData[1].id}/>
+                <DialogItems name={dialogsData[2].name} id={dialogsData[2].id}/>
+                <DialogItems name={dialogsData[3].name} id={dialogsData[3].id}/>
+                <DialogItems name={dialogsData[4].name} id={dialogsData[4].id}/>
+                <DialogItems name={dialogsData[5].name} id={dialogsData[5].id}/>
             </div>
             <div className={s.messages}>
-                <Message message="Lorem ipsum dolor sit, amet consectetur adipisicing elit."/>
-                <Message message="Exercitationem esse voluptatibus, modi porro minima magni dignissimos facere quas aliquam obcaecati, debitis eius ipsam animi ipsum harum possimus."/>
-                <Message message="Pariatur, eligendi molestiae."/>
-                <Message message="Hellow World!!"/>
+                <Message message={messageData[0].message}/>
+                <Message message={messageData[1].message}/>
+                <Message message={messageData[2].message}/>
+                <Message message={messageData[3].message}/>
             </div>
 
         </div>

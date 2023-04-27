@@ -1,0 +1,25 @@
+.content img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 20px 10px;
+}
+
+.profile p {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(212, 212, 48);
+}

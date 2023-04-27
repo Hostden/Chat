@@ -9,16 +9,14 @@ let postData = [
 
 ];
 
+let postsElement = postData.map(p => <Posts message={p.message} lake={p.lake}/>);
+
 const MyPosts = () => {
   return <div className={s.MyPosts}>
   <p>My posts</p>
    <textarea/>
    <button>Add</button>
-
-    <Posts message={postData[0].message} lake={postData[0].lake}/>
-    <Posts message={postData[1].message} lake={postData[1].lake} />
-    <Posts message={postData[2].message} lake={postData[2].lake} />
-
+    {postsElement}
   </div>
 }
 

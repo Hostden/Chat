@@ -20,8 +20,8 @@ const Message = (props) =>{
 
 const Dialogs = (props) => {
 
-    let messagesElement = props.message.map ( m => <Message message={m.message}/> );
-    let dialogElements = props.dialogs.map ( d => <DialogItems name={d.name} id={d.id}/>);
+    let messagesElement = props.stateDialogs.message.map ( m => <Message message={m.message}/> );
+    let dialogElements = props.stateDialogs.dialogs.map ( d => <DialogItems name={d.name} id={d.id}/>);
 
     return ( 
         <div className={s.dialogs}>
